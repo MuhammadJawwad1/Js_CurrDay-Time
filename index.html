@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var daysName= ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+        var day= new Date().getDay()
+        var currDay=daysName[day]
+        var time=new Date().getHours()
+        var mints=new Date().getMinutes()
+        var sec= new Date().getSeconds()
+        document.write(`Today is : ${currDay} </br> </br>`);
+        if(time < 12){
+            document.write(`Current time is : ${time} Am : ${mints} : ${sec}`);
+        }
+        else{
+            document.write(`Current time is : ${time} Pm : ${mints} : ${sec}`);
+
+        }
+        
+        
+    </script>
+</body>
+</html>
